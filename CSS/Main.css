@@ -69,23 +69,7 @@ p {
   }
 
 
-/* for small screens */
-@media (max-width: 500px) {
-  p {
-    float:none;
-    background-color: black;
-  }
-}
 
-/* for large screens */
-@media (min-width: 800px) {
-  .row {
-    clear:both;
-  }
-  p {
-    background-color: black;
-  }
-}
 
 h1 {
 	display: inline-block;
@@ -95,14 +79,13 @@ h1 {
 	text-transform: uppercase;
 	font-size: 70px;
 	-webkit-transform: rotate(-2deg) skew(-14deg, 0deg) translate(0px, 0px);
-	position: relative;
 	z-index: 5;
 	white-space: nowrap;
 	border-top: solid 6px #409CFF;
 	border-bottom: solid 6px #409CFF;
 	line-height: 100px;
-	padding: 0 0 7px 0;
-	margin: 25px 0 25px 180px;
+	
+  
 
 }
 
@@ -120,14 +103,24 @@ h1:after {
 
 .headercontainer {
   background-color: black;
-  width: 75%;
+  width: 840px;
   min-height: 100px;
   margin: 0 auto;
 }
 
-img{
+.bw {
+  -webkit-transition: all 0.5s ease;
+ 
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+}
+
+img {
   border: solid 2px white;
 }
+   
 
 .articletitle {
   float:left;
@@ -136,4 +129,37 @@ img{
 
 .relatedarticle {
   margin: 37px 0 5px 0;  
+}
+
+/* for small screens */
+@media (max-width: 912px) {
+  p {
+    float:none;
+    background-color: black;
+  }
+  h1{
+    font-size: 36px;
+  }
+
+  .headercontainer {
+  width: 420px;
+}
+  .col-1wide,
+  .col-2wide,
+  .col-5wide {
+    width:100%;
+    
+  }
+
+  .container{
+    width:60%;
+  }
+}
+
+/* for large screens */
+@media (min-width: 800px) {
+  p {
+    background-color: black;
+  }
+  
 }
