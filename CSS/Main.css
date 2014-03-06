@@ -8,15 +8,15 @@ html, body {
 
 p { 
   background-color: black;
-  border: solid 0.125em black;
-  padding: 0.25em 0.5em;
+  /*border: solid 0.125em black;*/
+  /*padding: 0.25em 0.5em;*/
   float:left;
 }
 
 
 /* we want to use a 6-col layout with 2 empty cols on each side as the gutter */
 .container {
-  background-color: teal;
+  background-color: black;/*teal*/
   width: 80%;
   min-height: 100px;
   margin: 0 auto;
@@ -124,7 +124,7 @@ img {
 
 .articletitle {
   float:left;
-  margin:12px;
+  /*margin:12px;*/
 }
 
 .relatedarticle {
@@ -161,5 +161,11 @@ img {
   p {
     background-color: black;
   }
+  
+}
+
+.titlelink {
+  text-decoration:none;
+  color:white;
   
 }
